@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>DropWheel</AssemblyName>
+    <RootNamespace>DropWheel</RootNamespace>
+    <Version>0.1.0</Version>
+    <NoWarn>$(NoWarn);WFAC010</NoWarn>
+    <!-- Precompiled code: the wheel and the first conversion don't wait for the JIT. -->
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <TieredPGO>true</TieredPGO>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+</Project>
